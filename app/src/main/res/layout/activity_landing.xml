@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Landing">
+    tools:context="ui.Landing">
 
     <include
         android:id="@+id/toolbar"
@@ -29,15 +29,16 @@
             android:src="@drawable/showjava_logo" />
 
         <android.support.v7.widget.CardView
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="1dp"
-            card_view:cardUseCompatPadding="true">
+
+            fab:cardCornerRadius="4dp"
+            fab:cardElevation="1dp"
+            fab:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,13 +90,13 @@
 
         android:layout_marginBottom="4dp"
         android:layout_marginRight="6dp"
-        fab:menu_backgroundColor="@android:color/transparent"
-        fab:menu_colorNormal="@color/accent"
-        fab:menu_colorPressed="@color/accent"
-        fab:menu_colorRipple="@color/accent"
-        fab:menu_fab_size="normal"
-        fab:menu_icon="@drawable/fab_add"
-        fab:menu_showShadow="true">
+        tools:menu_backgroundColor="@android:color/transparent"
+        tools:menu_colorNormal="@color/accent"
+        tools:menu_colorPressed="@color/accent"
+        tools:menu_colorRipple="@color/accent"
+        tools:menu_fab_size="normal"
+        tools:menu_icon="@drawable/fab_add"
+        tools:menu_showShadow="true">
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item2"
@@ -103,8 +104,8 @@
             android:layout_height="wrap_content"
             android:onClick="OpenFilePicker"
             android:src="@drawable/ic_action_pick_sdcard"
-            fab:fab_label="Pick from sdcard"
-            fab:fab_size="normal" />
+            tools:fab_label="Pick from sdcard"
+            tools:fab_size="normal" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item1"
@@ -112,8 +113,8 @@
             android:layout_height="wrap_content"
             android:onClick="OpenAppListing"
             android:src="@drawable/ic_action_pick_installed"
-            fab:fab_label="Pick from Installed"
-            fab:fab_size="normal" />
+            tools:fab_label="Pick from Installed"
+            tools:fab_size="normal" />
 
     </com.github.clans.fab.FloatingActionMenu>
 

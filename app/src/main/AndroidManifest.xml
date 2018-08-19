@@ -24,7 +24,7 @@
             android:value="37243dbea20e385bdebdc999bef0715ef594e382" />
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+             />
 
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

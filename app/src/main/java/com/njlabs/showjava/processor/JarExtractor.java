@@ -3,6 +3,7 @@ package com.njlabs.showjava.processor;
 import android.util.Log;
 
 import com.crashlytics.android.Crashlytics;
+
 import com.googlecode.dex2jar.Method;
 import com.googlecode.dex2jar.ir.IrMethod;
 import com.googlecode.dex2jar.reader.DexFileReader;

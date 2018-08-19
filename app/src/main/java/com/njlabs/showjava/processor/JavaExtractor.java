@@ -97,7 +97,7 @@ public class JavaExtractor extends ProcessServiceHelper {
                     public void run() {
                         boolean javaError = false;
                         try {
-                            Main.doJar(dcCommonState, path);
+                            Main.doJar(dcCommonState, path,null);
                         } catch (Exception | StackOverflowError e) {
                             Ln.e(e);
                             javaError = true;
